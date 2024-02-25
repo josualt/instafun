@@ -6,6 +6,15 @@
 </head>
 <body>
     <h1>Sound effects</h1>
-    <img src="images/button.png" alt="button">
+    <img src="images/button.png" alt="button" onclick = 'playAudio()'>
+    <audio id="moan1">
+        <source src="audio/moan1.mp3" type="audio/mpeg">
+      </audio>
+    <script>
+        var x = document.getElementById("moan1");
+        function playAudio() { 
+  x.play();
+}
+    </script>
 </body>
 </html>
